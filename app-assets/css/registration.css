@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url('./himalayas.jpg');
+    background-size: cover;
+}
+
+.notification {
+    color: red;
+    margin-top: 0px;
+    text-align: center
+}
+
+.box1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: rgba(0, 0, 0, .8);
+    padding: 40px;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
+    border-radius: 10px;
+}
+
+.box1 h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.box1 .inputbox {
+    position: relative;
+}
+
+.box1 .inputbox input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+}
+
+.box1 .inputbox label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+
+}
+
+.box1 .inputbox input:focus~label,
+.box1 .inputbox input:valid~label {
+    top: -18px;
+    left: 0;
+    transition: .5s;
+    color: #03a9f4;
+    font-size: 12px;
+}
+
+.box1 input[type="submit"] {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 40px;
+    width: 80px;
+    font-size: 16px;
+    background: #03a9f4;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 37%;
+}
+
+.box1 input:focus,
+.box1 input:valid {
+    border-bottom: 1px solid #03a9f4
+}
+
+.link {
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
